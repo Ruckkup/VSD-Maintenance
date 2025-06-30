@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSD Technician Learning Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>VSD Technician Learning Path</h1>
+        <div class="progress-container">
+            <p>ความคืบหน้าโดยรวม: <span id="total-progress">0</span>%</p>
+            <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+    </header>
+
+    <main id="roadmap">
+        <!-- Level 1: Foundation -->
+        <div class="level-card" id="level-1">
+            <h2>Level 1: Foundation</h2>
+            <div class="module">
+                <h3>1.1 ความปลอดภัยต้องมาก่อน (Safety First)</h3>
+                <ul>
+                    <li><input type="checkbox" data-module="safety"> เรียนรู้เรื่อง Lockout/Tagout (LOTO)</li>
+                    <li><input type="checkbox" data-module="safety"> อบรมความปลอดภัยทางไฟฟ้า</li>
+                    <li><input type="checkbox" data-module="safety"> ฝึกใช้ PPE</li>
+                </ul>
+            </div>
+            <div class="module">
+                <h3>1.2 ทฤษฎีไฟฟ้าเบื้องต้น</h3>
+                <ul>
+                    <li><input type="checkbox" data-module="electrical"> ศึกษา กฎของโอห์ม</li>
+                    <li><input type="checkbox" data-module="electrical"> อ่านบทความ AC vs DC</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Level 2: Core VSD Knowledge -->
+        <div class="level-card" id="level-2">
+            <h2>Level 2: Core VSD Knowledge</h2>
+            <div class="module">
+                <h3>2.1 VSD คืออะไร?</h3>
+                <ul>
+                    <li><input type="checkbox" data-module="vsd-what"> <a href="[Link-to-video]" target="_blank">ดูวิดีโอหลักการทำงาน VSD</a></li>
+                    <li><input type="checkbox" data-module="vsd-what"> อ่านเอกสารประโยชน์ของ VSD</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- เพิ่ม Level 3 และ 4 ต่อที่นี่ -->
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
