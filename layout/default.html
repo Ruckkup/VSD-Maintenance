@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+    <header>
+        <h1>{{ site.title }}</h1>
+        <p class="roadmap-description">{{ site.description }}</p>
+        
+        <div class="progress-container">
+            <p>Overall Progress: <span id="total-progress">0</span>%</p>
+            <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+    </header>
+
+    <main id="roadmap">
+        {{ content }}
+    </main>
+
+    <!-- ==================================================== -->
+    <!--  MODAL กลาง (อันเดียวสำหรับทุกเนื้อหา)  -->
+    <!-- ==================================================== -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+
+    <div class="modal" id="content-modal">
+        <div class="modal-header">
+            <h2 id="modal-title">Content Title</h2>
+            <button class="close-button">×</button>
+        </div>
+        <div class="modal-body" id="modal-body-content">
+            <!-- เนื้อหาจะถูกโหลดมาใส่ที่นี่ด้วย JavaScript -->
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+</body>
+</html>

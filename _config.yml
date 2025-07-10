@@ -1,0 +1,28 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learn.getgrav.org/17/advanced/yaml
+
+title: VSD Motor Drive Specialist Roadmap
+description: >- # this means to ignore newlines until "baseurl:"
+  เส้นทางสู่การเป็นผู้เชี่ยวชาญด้าน VSD Motor Drive. 
+  แผนภูมินี้จะนำทางคุณตั้งแต่ความรู้พื้นฐานเกี่ยวกับเครื่องกลไฟฟ้าและอิเล็กทรอนิกส์กำลัง 
+  ไปจนถึงการประยุกต์ใช้งานและการแก้ไขปัญหาขั้นสูง. 
+  เริ่มต้นการเรียนรู้และติดตามความก้าวหน้าของคุณได้ที่นี่!
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+# theme: minima # เราไม่ใช้ theme สำเร็จรูป เพราะเรามี CSS ของตัวเอง
+plugins:
+  - jekyll-feed

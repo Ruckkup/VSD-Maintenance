@@ -1,0 +1,54 @@
+- title: "Fundamentals of Electrical Machines"
+  modules:
+    - title: "AC Motor Theory"
+      topics:
+        - id: "task1"
+          title: "Stator Windings and Rotating Magnetic Fields"
+          path: "content/ac-motor-theory/stator-windings.html"
+        - id: "task2"
+          title: "Equivalent Circuit of Induction Motors"
+          path: "content/ac-motor-theory/equivalent-circuit.html"
+        - id: "task3"
+          title: "Torque-Speed Characteristics"
+          path: "content/ac-motor-theory/torque-speed.html"
+        - id: "task4"
+          title: "Motor Slip and Efficiency"
+          path: "#"
+        - id: "task5"
+          title: "Power Factor and Reactive Power"
+          path: "#"
+
+    - title: "DC Motor Theory"
+      topics:
+        - id: "task6"
+          title: "Construction and Working Principle"
+          path: "#"
+        - id: "task7"
+          title: "Types of DC Motors (Series, Shunt, Compound)"
+          path: "#"
+
+- title: "Power Electronics"
+  modules:
+    - title: "Motor Nameplate Data Interpretation"
+      topics:
+        - id: "task8"
+          title: "Understanding Motor Ratings (HP, kW, Voltage, Current, Speed)"
+          path: "#"
+
+    - title: "Semiconductor Devices"
+      topics:
+        - id: "task9"
+          title: "Diodes: Types, Characteristics, and Applications"
+          path: "#"
+
+# --- ตัวอย่างการเพิ่ม Section ใหม่ ---
+# - title: "VSD Hardware and Software"
+#   modules:
+#     - title: "Drive Components"
+#       topics:
+#         - id: "task10"
+#           title: "Rectifier, DC Bus, Inverter"
+#           path: "#"
+#         - id: "task11"
+#           title: "Control Board and I/O"
+#           path: "#"

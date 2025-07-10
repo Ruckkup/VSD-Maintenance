@@ -1,0 +1,269 @@
+/* General Body Styles */
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header and Progress Bar */
+header {
+    background-color: #ffffff;
+    color: #1c1e21;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #dddfe2;
+}
+
+header h1 {
+    margin: 0;
+    color: #000000; /* VSD Black */
+}
+
+.roadmap-description {
+    max-width: 800px;
+    margin: 1rem auto;
+    text-align: center;
+    color: #444;
+    line-height: 1.6;
+}
+
+.progress-container {
+    width: 90%;
+    margin: 15px auto 0;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 12px;
+    border-radius: 6px;
+    border: none;
+}
+#progress-bar::-webkit-progress-bar {
+    background-color: #e4e6eb;
+    border-radius: 6px;
+}
+#progress-bar::-webkit-progress-value {
+    background-color: #000000;
+    border-radius: 6px;
+    transition: width 0.3s ease-in-out;
+}
+#progress-bar::-moz-progress-bar {
+    background-color: #000000;
+    border-radius: 6px;
+}
+
+
+/* Main Roadmap Layout */
+#roadmap {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Section Card (e.g., "Power Electronics") */
+.section-card {
+    background-color: #ffffff;
+    border: 1px solid #dddfe2;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden; /* For collapsible effect */
+}
+
+.section-title {
+    margin-top: 0;
+    color: #000000;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    cursor: pointer; /* Make title clickable */
+    position: relative;
+    padding-right: 25px; /* Space for arrow */
+}
+
+.section-title::after {
+    content: '▲'; /* Up arrow for expanded state */
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    font-size: 0.8em;
+}
+
+.section-card.collapsed .section-title::after {
+    transform: translateY(-50%) rotate(180deg); /* Down arrow for collapsed */
+}
+
+/* Module (Yellow Box in original map) */
+.module {
+    background-color: #fffbe6; /* Light yellow */
+    border: 1px solid #ffe58f;
+    border-left: 5px solid #fadb14; /* Yellow accent */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    max-height: 1000px; /* For transition effect */
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease, margin 0.5s ease;
+    opacity: 1;
+}
+
+.section-card.collapsed .module {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+
+.module h3 {
+    margin-top: 0;
+    color: #000000;
+}
+
+/* Checklist Items */
+.module ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.module li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.module li:last-child {
+    margin-bottom: 0;
+}
+
+.module input[type="checkbox"] {
+    margin-right: 12px;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+a.content-trigger {
+    color: #1c1e21;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 1px dotted #888;
+    transition: color 0.2s, border-bottom-color 0.2s;
+}
+a.content-trigger:hover {
+    color: #007bff;
+    border-bottom-color: #007bff;
+}
+
+/* ==================
+   MODAL STYLES
+   ================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 101;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.close-button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #888;
+}
+.close-button:hover {
+    color: #333;
+}
+
+.modal-body {
+    padding: 25px;
+    overflow-y: auto;
+    max-height: calc(90vh - 75px); /* Adjusted height */
+}
+
+.modal-body h3 { color: #005a9c; margin-top: 20px; margin-bottom: 10px; }
+.modal-body p { margin-bottom: 15px; }
+.modal-body pre { background-color: #f4f4f4; padding: 15px; border-radius: 5px; white-space: pre-wrap; word-wrap: break-word; }
+
+/* Loading Spinner */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 40px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body { padding: 10px; }
+    header { padding: 15px; }
+    .section-card { padding: 15px; }
+}
