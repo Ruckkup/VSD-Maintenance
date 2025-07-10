@@ -14,7 +14,7 @@ title: VSD Motor Drive Specialist Roadmap
             {% for topic in module.topics %}
             <li>
                 <input type="checkbox" id="{{ topic.id }}">
-                <a href="#" class="content-trigger" data-content-path="{{ topic.path | relative_url }}">{{ topic.title }}</a>
+                <a href="#" class="content-trigger" data-content-path="{{ topic.path | absolute_url }}">{{ topic.title }}</a>
             </li>
             {% endfor %}
         </ul>
