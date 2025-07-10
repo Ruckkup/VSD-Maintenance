@@ -27,7 +27,7 @@ header h1 {
 
 /* ===== ส่วนที่แก้ไขแล้ว ===== */
 .roadmap-description {
-    max-width: 800px;
+    max-width: 1600px;
     margin: 1.5rem auto; /* เพิ่มระยะห่างบนล่างเล็กน้อยเพื่อความสวยงาม */
     text-align: left;  /* จัดชิดซ้าย */
     white-space: pre-wrap; /* ทำให้การเว้นบรรทัดจาก _config.yml แสดงผลถูกต้อง */
