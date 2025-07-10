@@ -25,13 +25,16 @@ header h1 {
     color: #000000; /* VSD Black */
 }
 
+/* ===== ส่วนที่แก้ไขแล้ว ===== */
 .roadmap-description {
     max-width: 800px;
-    margin: 1rem auto;
-    text-align: center;
-    color: #444;
-    line-height: 1.6;
+    margin: 1.5rem auto; /* เพิ่มระยะห่างบนล่างเล็กน้อยเพื่อความสวยงาม */
+    text-align: left;  /* จัดชิดซ้าย */
+    white-space: pre-wrap; /* ทำให้การเว้นบรรทัดจาก _config.yml แสดงผลถูกต้อง */
+    color: #333; /* ทำให้สีเข้มขึ้นเล็กน้อย */
+    line-height: 1.7; /* เพิ่มความสูงระหว่างบรรทัดให้อ่านง่ายขึ้นอีกนิด */
 }
+/* ======================== */
 
 .progress-container {
     width: 90%;
