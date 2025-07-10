@@ -64,7 +64,7 @@ header h1 {
 
 /* Main Roadmap Layout */
 #roadmap {
-    max-width: 900px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -265,7 +265,7 @@ a.content-trigger:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
     body { padding: 10px; }
     header { padding: 15px; }
     .section-card { padding: 15px; }
