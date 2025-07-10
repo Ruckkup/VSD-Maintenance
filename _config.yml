@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   ไปจนถึงการประยุกต์ใช้งานและการแก้ไขปัญหาขั้นสูง. 
   เริ่มต้นการเรียนรู้และติดตามความก้าวหน้าของคุณได้ที่นี่!
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/VSD-Maintenance" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
